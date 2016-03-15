@@ -8,14 +8,14 @@ If you do want to use this clean beamer theme, all that I ask is that you star t
 give me and the other links in this document credit. I hope that you enjoy this theme as much
 as I did creating it! Have fun!
 
-# Cloning
+## Cloning
 
 `git clone https://github.com/mccurdyc/beamer-theme.git`
 
-# Compiling
+## Compiling
 
 You need to compile using `LuaLaTeX` in order to support the custom fonts.
-Additionally, the `-shell-escape` is only necessary if you want to use the [minted](ftp://ftp.dante.de/tex-archive/macros/latex/contrib/minted/minted.pdf) package for source code highlighting.
+Additionally, the `-shell-escape` is only necessary if you want to use the `minted` package for source code highlighting.
 
 `lualatex -shell-escape beamer.tex`
 

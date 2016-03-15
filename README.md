@@ -15,7 +15,7 @@ as I did creating it! Have fun!
 # Compiling
 
 You need to compile using `LuaLaTeX` in order to support the custom fonts.
-Additionally, the `-shell-escape` is only necessary if you want to use the *minted* package for source code highlighting.
+Additionally, the `-shell-escape` is only necessary if you want to use the [minted](ftp://ftp.dante.de/tex-archive/macros/latex/contrib/minted/minted.pdf) package for source code highlighting.
 
 `lualatex -shell-escape beamer.tex`
 

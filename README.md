@@ -1,24 +1,31 @@
-# beamer-theme
+# icsme2016-presentation
 
-This is my custom beamer (LaTeX) theme. It is built upon an existing, and awesome beamer theme in [Wronki](http://kaszkowiak.eu/wronki-a-new-beamer-template/_).
-Additionally, I received inspiration and guidance in changing the color scheme to the [Solarized](http://ethanschoonover.com/solarized)
-from this link [here](http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/).
+This repository contains the LaTeX source code and additional resources for a presentation that I, [Colton
+J. McCurdy](http://coltonmccurdy.com/) gave at the 32nd IEEE International Conference on Software Maintenance
+and Evolution (ICSME 2016).  The presentation's source code uses a wide variety of LaTeX packages, such as `beamer` and
+`pgftikz`, in order to create each slide.  I have developed a custom theme for the display of the slides and the use of
+progressive revealing of technical diagrams.
 
-If you do want to use this clean beamer theme, all that I ask is that you star this repository and you
-give me and the other links in this document credit. I hope that you enjoy this theme as much
-as I did creating it! Have fun!
+You are welcome to use these slides as inspiration for your own presentation. If you find this example useful, could I
+trouble you to star this repository and then acknowledge it in your own presentation slides?
 
-## Cloning
+You can type the following command if you want to clone this repository:
 
-`git clone https://github.com/mccurdyc/beamer-theme.git`
+```shell
+git clone https://github.com/mccurdyc/icsme2016-presentation.git
+```
 
-## Compiling
+Then, if you want to compile the presentation to a PDF, you should type the following commands.
 
-You need to compile using `LuaLaTeX` in order to support the custom fonts.
-Additionally, the `-shell-escape` is only necessary if you want to use the `minted` package for source code highlighting.
+```shell
+cd icsme2016-presentation
+pdflatex icsme2016-mccurdyc.tex
+pdflatex icsme2016-mccurdyc.tex
+```
 
-`lualatex -shell-escape beamer.tex`
-
-`lualatex -shell-escape beamer.tex`
-
-
+Please note that this has been tested on an Arch Linux 4.7.6 workstation running a very recent version of LaTeX
+(pdfTeX 3.14159265-2.6-1.40.17 TeX Live 2016/Arch Linux) that was installed using the [pacman package manager](https://wiki.archlinux.org/index.php/pacman)
+It is worth noting that you can also compile the paper using other LaTeX development tools, such as `latexmk`.
+Additionally, you may find that the placement of certain `pgftikz` diagrams requires manual adjustment depending
+on your LaTeX development environment and other settings. If you are unable to compile the presentation with your
+development tools and your execution environment, then please open a new issue and I will attempt to resolve your concerns.
